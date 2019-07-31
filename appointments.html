@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel= 'stylesheet' type="text/css" href= "web.css">
+        <h1>Appointments</h1>
+        <br><br>
+        <div class="cont_principal">
+          <div class="cont_centrar">
+            <div class="cont_login">
+              <form action="" name="sign_form">
+                <div class="cont_tabs_login">
+                  <ul class='ul_tabs'>
+                    <li class="active"><a href="#in" onclick="sign_in()">SIGN IN</a>
+                    <span class="linea_bajo_nom"></span>
+                    </li>
+                    <li><a href="#up" onclick="sign_up()">SIGN UP</a><span class="linea_bajo_nom"></span>
+                    </li>
+                   </ul>
+                 </div>
+                <div class="cont_text_inputs">
+                 <input type="text" class="input_form_sign" placeholder="Name"  name="name_us" onblur="checkName(this)"/>
+                    <p class="name_right">Please type the name with number or Chinese or English.</p>
+                    <input type="text" class="input_form_sign d_block active_inp" placeholder="Email" name="email_us" onblur="checkEmail(this)" />
+                    <p class="email_right"></p>
+                    <input type="password" class="input_form_sign d_block  active_inp" placeholder="Password" name="pass_us" onblur="checkPass(this)" />
+                    <p class="pass_right">Please type the password contains 6-20 uppercase or lowercase letters , numbers or underline.</p>
+                    <input type="password" class="input_form_sign" placeholder="Confirm Password" name="conf_pass_us" onblur="checkConfPass(this)" />
+                  <p class="confpass_right">Please type the password same with you just type.</p>
+                    <a href="#" class="link_forgot_pass d_block" >Forgot Password ?</a>    
+                </div>
+                <div class="cont_btn">
+                  <button id="btn_sign"><a href="menu.html">SIGN IN</a></button>    
+                </div>     
+              </form>
+            </div>   
+          </div>
+        </div>
+<script src="web.js"></script>
+</html>
